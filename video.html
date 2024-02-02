@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./video.css" as="style" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="hero">
+      <video autoplay muted loop id="myVideo">
+        <source src="production_id_4761426 (2160p).mp4" type="video/mp4" />
+      </video>
+      <div class="content-hero">
+        <h1>Heading</h1>
+        <p>Lorem ipsum...</p>
+        <!-- Use a button to pause/play the video with JavaScript -->
+      </div>
+      <!-- Optional: some overlay text to describe the video -->
+    </section>
+    <h2 class="production">Produits Vedettes</h2>
+    <section class="product-section">
+      <!-- {% for product in products %} -->
+      <div class="card">
+        <img src="./whey-1.png" alt="{{ product.name }}" />
+        <div class="card-content">
+          <h3 class="card-title">{{ product.name }}</h3>
+          <p class="card-text">{{ product.description }}</p>
+          <a href="" class="btn-primary">En savoir plus</a>
+        </div>
+      </div>
+
+      <!-- {% else %} -->
+      <p>Aucun produit trouvé...</p>
+      <!--  {% endfor %} -->
+    </section>
+    <section class="img-section"></section>
+
+    <div class="container">
+      <footer
+        id="footer"
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+      >
+        <div class="col mb-3">
+          <h5>company</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">about us</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary"
+                >our services</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary"
+                >privacy policy</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary"
+                >visit website</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col mb-3">
+          <h5>Get help</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">FAQ</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">shipping</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">returns</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary"
+                >order status</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary"
+                >payment options</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col mb-3">
+          <h5>online shop</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">download</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">changelog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col mb-3">
+          <h5>follow us</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">
+                <i class="fa-brands fa-facebook"></i> facebook
+              </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">
+                <i class="fa-brands fa-twitter"></i> twitter
+              </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">
+                <i class="fa-brands fa-instagram"></i> instagram
+              </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">
+                <i class="fa-brands fa-youtube"></i> youtube
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
